@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>웹 사이트 이름</title>
+    <style>
+        h4 {
+            color: red; background-color: #582793;
+        }
+        h5 {
+            color: blue;
+        }
+
+        .divider {
+            font-size: 14px;
+            color: purple;
+        }
+
+        .title {
+            color: red;
+        }
+
+        .no-title {
+            color: blue;
+        }
+
+        #heading-logo {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h4>타이틀</h4>
+    <h5>타이틀</h5>
+
+    <div class="divider">구분하기</div>
+
+    <h1 class="title">헤딩1</h1>
+    <h2 class="no-title">헤딩2</h2>
+    <h3 class="title">헤딩3</h3>
+    <div class="title">나도 타이틀</div>
+
+    <div class="title red-text center">나는 제목</div> <!-- 한 태그에 여러 개의 클래스를 지정할 수도 있다. 여러 개 클래스를 지정할 땐 띄어쓰기로 클래스 이름을 구분한다. 따라서 클래스 이름에는 띄어쓰기가 들어가면 안 되므로 보통 여러 단어로 클래스 명을 짓고 싶을 때는 - 혹은 _ 표시를 띄어쓰기 대신 사용한다. -->
+
+    <div id="heading-logo">로고 타이틀</div>
+</body>
+</html>
+
+<!--
+    ⭐ 정리하기 ⭐ 
+✔ html의 태그는 모두 중첩할 수 있다.
+
+✔ html의 기본 구조 
+- <!DOCTYPE html> 
+- html 태그 안에 head 태그, body 태그
+
+
+⭐ 정리하기 ⭐ 
+✔ CSS 선언 방법 : 선택자 { 속성이름: 속성값; }
+
+✔ CSS 적용하기 - head 태그 안에 style 태그 안에 작성
+
+✔ 선택자의 종류
+- HTML 태그 (최대한 안쓰는 방향으로...)
+- 클래스 (선택자는 .클래스이름)
+- 아이디 (선택자는 #아이디이름)
+-->
