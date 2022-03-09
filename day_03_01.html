@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>Day 3 - 1. 폰트 적용하기</title>
+<!--
+        // <link> 방식으로 웹 폰트 불러오기
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+-->
+
+<!--
+        // @import 방식으로 웹 폰트 불러오기
+        // 외부 스타일 시트 (css 파일 따로 분리)로 적용할 경우 css 파일 내부에 @import 부분의 코드만 추가하면 된다.
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+        </style>
+-->
+
+    <link rel="stylesheet" href="./css/day_03_01_style.css">
+    </head>
+    <body>
+        <div class="nanum-myeongjo">나눔 명조</div>
+        <div class="nanum-myeongjo font-light">나눔 명조 - regular(400)</div>
+        <div class="nanum-myeongjo font-bold">나눔 명조 - bold(700)</div>
+        <div class="nanum-myeongjo font-extra-bold">나눔 명조 - extra-bold(800)</div>
+
+        <!-- 구글 폰트 이외의 사이트에서 웹 폰트를 적용할 때는 또 다른 방식으로 적용할 수도 있다.
+            이 때 폰트의 확장자로 otf, ttf, svg, woff 등이 있을 수 있는데, woff 를 사용할 것을 추천한다. 
+            woff는 web open font format 의 약자다. -->
+        <!-- 폰트 파일 자체를 다운로드 받아서 상대경로로 지정한 후 사용할 수도 있지만,
+            폰트 파일이 크면 프로젝트 자체가 무거워질 수 있으므로 추천하지는 않는다. -->
+        <!-- 폰트를 적용하는 또 다른 방법으로 @font-face가 존재한다.
+            @font-face 코드는 스타일시트 안에 작성하여 적용하며,
+            적용할 때 font-family의 이름은 코드에서 작성한 font-family 이름과 같아야 한다. -->
+        <h1>SDSamliphopangche_Outline 폰트를 적용</h1>
+    </body>
+</html>
+
+<!--
+    ⭐ 정리하기 ⭐
+✔ 웹 개발에서 폰트를 적용할 때는 웹 폰트 사용
+- 웹 폰트를 불러온 후(url 사용)
+- font-family 속성으로 적용
+- 글자 굵기는 font-weight 속성으로 적용
+-->
