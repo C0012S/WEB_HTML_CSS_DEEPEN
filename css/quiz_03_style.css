@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'GimpoGothicBold00';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/GimpoGothicBold00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: "Nanum Myeongjo", serif;
+}
+
+p {
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 700;
+}
+
+h2 {
+    color: red;
+    font-family: "Nanum Myeongjo", serif;
+}
+
+span {
+    font-weight: bolder;
+}
+
+h3 {
+    color: purple;
+    font-family: 'GimpoGothicBold00';
+}
+
+h5 {
+    font-family: "Nanum Myeongjo", serif;
+}
+
+li {
+    font-family: "Nanum Myeongjo", serif;
+}
