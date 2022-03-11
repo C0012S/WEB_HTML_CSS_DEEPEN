@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>Day 4 - 1. 패딩과 마진</title>
+    </head>
+    <body>
+        <!-- 패딩은 박스 테두리와 안쪽 콘텐츠 사이의 여백,
+            마진은 박스 테두리 바깥의 여백​을 의미한다. -->
+
+        <!-- 버튼을 클릭할 수 있도록 설정할 때, 마진이 아닌 패딩까지만 버튼으로 인식한다.
+            마진은 박스 테두리 밖의 여백을 의미하기 때문에, 클릭할 수 있는 여백이 아니다.
+            반면 패딩은 테두리 안쪽의 여백을 의미하기 때문에, 클릭할 수 있는 영역이 늘어나는 효과를 볼 수 있죠.
+            만약 패딩은 0으로 두고 마진만 설정하면 딱 "텍스트 크기만큼만" 클릭 되므로 불편할 수 있다.-->
+
+        <!-- div 태그의 기본 display 속성은 block이다. 따라서 줄 바꿈이 자동으로 들어가게 된다.
+            즉, div 태그 하나가 한 줄을 통째로 차지한다는 의미다.
+            이때 div 태그의 display 속성을 inline-block로 수정하면, 줄 바꿈 없이 div 박스를 순서대로 표시할 수 있다. -->
+        
+        <!-- 1. 패딩으로 여백 주기 -->
+        <div style="background-color: #eeeeee">
+            <div style="display: inline-block; padding: 20px">홈</div>
+            <div style="display: inline-block; padding: 20px">코뮤니티로 가기</div>
+            <div style="display: inline-block; padding: 20px">네비게이션</div>
+        </div>
+
+        <!-- 2. 마진으로 여백 주기 -->
+        <div style="background-color: gray">
+            <div style="display: inline-block; margin: 20px">홈</div>
+            <div style="display: inline-block; margin: 20px">코뮤니티로 가기</div>
+            <div style="display: inline-block; margin: 20px">네비게이션</div>
+        </div>
+
+        <!-- 여백을 줄 때 상 하 좌 우를 따로따로 적용할 수 있다.
+            left, right, top, bottom 속성을 통해 여백을 따로 설정할 수 있다. -->
+        <!-- padding: 10px; ▶ 상하좌우 패딩을 10px로 지정
+            padding-left: 10px ▶ 왼쪽 패딩을 10px로 지정
+            padding-right: 10px ▶ 오른쪽 패딩을 10px로 지정
+            padding-top: 10px ▶ 위쪽 패딩을 10px로 지정
+            padding-bottom: 10px ▶ 아래쪽 패딩을 10px로 지정 -->
+
+        <!-- padding: 3px 10px ▶ 상하 = 3px, 좌우 = 10px로 설정
+            padding: 5px 10px 3px ▶ 위쪽 = 5px, 좌우 = 10px, 아래쪽 = 3px으로 설정
+            padding: 5px 10px 7px 3px ▶ 위쪽 = 5px, 오른쪽 = 10px, 아래쪽 = 7px, 왼쪽 = 3px으로 설정 -->
+        <!-- margin은 padding 대신 margin을 작성하는 방식으로 동일하다. -->
+    </body>
+</html>
+
+<!-- 
+    ⭐ 정리하기 ⭐
+
+✔ 여백을 설정하는 방법 = 패딩 / 마진
+- 패딩 = 테두리와 텍스트 사이 여백
+- 마진 = 테두리 바깥의 여백
+-->
