@@ -1,0 +1,19 @@
+.head {
+    font-size: 4rem;
+    color: pink;
+    font-weight: bold;
+    text-align: center;
+    margin: 30px;
+}
+
+.body {
+    text-align: center;
+    padding: 3em;
+}
+
+.text {
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 100%;
+    background-color: pink;
+    color: purple;
+}
