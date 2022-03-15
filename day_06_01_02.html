@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>Day 6 - 2. FLEX 테스트</title>
+        <link rel="stylesheet" href="./css/day_06_01_02_style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="column1">
+                <div class="row1 box"></div>
+                <div class="row2 box"></div>
+                <div class="row3 box"></div>
+            </div>
+            <div class="column2">
+                <div class="row4 box"></div>
+                <div class="row5">
+                    <div class="column3 box"></div>
+                    <div class="column4 box"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+<!--
+    이 예제는 flex를 적용하여 구현한 복잡한 레이아웃이다.
+    전 예제보다 코드도, 결과 디자인도 훨씬 깔끔하네요!
+    이처럼 flex는 복잡한 레이아웃을 구현하기 위한 css 개념이다.
+
+    사실 flex는 만들어진 지 얼마 되지 않은 따끈따끈한 개념이다.
+    flex가 없을 땐 float이라는 속성 (한 입, 웹 개발에서는 다루지 않았다.)
+    또는 앞선 예시처럼 inline-block으로 한땀 한땀 레이아웃을 만들었었다.
+    그러나 flex가 만들어진 이후로는 많은 사이트가 flex를 적용하여 레이아웃을 만들고 있죠!
+    물론 아닌 곳들도 있다.
+-->
+
+<!-- flex 적용하기
+    ✅ 컨테이너(container)와 아이템(item) 이해하기
+        flex 레이아웃을 적용할 때는
+        "flex 레이아웃은 무조건 큰 박스 ▶ 작은 박스 순서로 만든다"
+        이 말은 꼭 기억해야 한다.
+        그 이유는 flex 레이아웃의 기본이 바로 컨테이너(container)와 아이템(item)이기 때문이다.
+        flex 레이아웃으로 배치하고 싶은 박스가 아이템​이 되고,
+        아이템을 둘러싼 박스가 컨테이너가 된다.
+
+    ✅ 아이템에 적용하는 flex 속성 
+        flex 레이아웃을 적용하기 위해선 컨테이너에 display: flex; 속성을 *무조건* 설정해 주어야 한다.
+        컨테이너에 display: flex 속성이 적용되면
+        그 안에 속해있는 아이템에 flex 레이아웃에 적용 할 수 있는 다양한 속성을 설정할 수 있다. (flex, flex-basis, flex-shrink, flex-grow 등등...)
+        아이템에선 flex : 숫자; 형태로 flex를 적용할 수 있다.
+        이때 숫자는 컨테이너의 너비를 100이라고 했을 때 해당 아이템이 차지할 면적의 비율을 의미한다.
+        예시로 한 컨테이너에서 0.4: 1 의 비율로 면적을 차지한다.
+
+    ✅ flex-direction - row vs column
+        총 3개의 박스의 레이아웃은 어떻게 flex를 적용할 수 있을까?
+        하나의 div 태그가 아이템이 될 수도, 컨테이너가 될 수도​ 있다.
+        앞선 예시에서는 아이템이였던 좌측의 박스를 컨테이너로 사용 해 본다.
+        컨테이너에 display: flex; 속성을 설정하고, 그 안의 박스들을 아이템으로 설정하면 된다.
+        하지만 이번에는 아까의 flex 레이아웃과 조금 다르다.
+        컨테이너의 속성에도 flex-direction: column; 하나가 추가되었다.
+        flex 레이아웃의 종류는 크게 2 가지다.
+        가로로 쌓이는 레이아웃(flex-direction: row ▶ 기본 설정)과
+        세로로 쌓이는 레이아웃 (flex-direction: column)이다.
+        따라서 아이템이 세로로 쌓이게 만들려면
+        *컨테이너*에 flex-direction: column; 속성을 설정해야 한다.
+
+        나머지 레이아웃은 어떻게 적용할 수 있을까?
+        아이템이었던 박스를 컨테이너로 설정하고, 각각 아이템을 면적 비율로 설정한다.
+        마지막으로 가로로 쌓이는 레이아웃을 만들면, flex 레이아웃 설정이 끝났다.
+-->
+
+<!--
+    ⭐ 정리하기 ⭐
+✔ flex 로 복잡한 레이아웃을 만들 수 있다.
+
+✔ flex 레이아웃은 큰 박스 ▶ 작은 박스 순으로 만드는 것이 좋다.
+
+✔ 가로로 혹은 세로로 쌓이도록 배치하고 싶은 박스가 flex 아이템, 아이템들을 둘러싼 박스가 컨테이너가 된다.
+- 컨테이너에 적용하는 속성 :
+  - display: flex; (필수)
+  - flex-direction: column; (column=세로로 쌓기, row=가로로 쌓기(*기본))
+- 아이템에 적용하는 속성 :
+  - flex : 숫자 ; (숫자는 컨테이너의 면적 중에서 차지할 면적의 비율)
+-->
