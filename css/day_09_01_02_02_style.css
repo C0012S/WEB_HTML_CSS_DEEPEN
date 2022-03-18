@@ -1,0 +1,11 @@
+.menu a {
+    background-color: yellow;
+}
+
+.menu-items > a {
+    color: red;
+}
+
+.menu > a {
+    border: 1px solid grey;
+}
