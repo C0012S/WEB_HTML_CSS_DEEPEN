@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Day 12 - 1. JavaScript 테스트</title>
+        <link rel="stylesheet" href="./css/day_12_01_style.css" />
+    </head>
+    <body>
+        <div id="text" class="hidden">텍스트</div>
+        <button id="button" onclick="clickButton()">버튼</button>
+        <script>
+            // 이 곳에 Javascript 추가
+            function clickButton() {
+                document.getElementById("text").style.display = "block";
+            }
+        </script>
+    </body>
+</html>
+
+<!-- 
+    📌 Javascript 맛보기 
+        Day 1. 웹 개발 이해하기에서 html, css, javascript의 역할을 배웠던 거 기억하시나요?
+        javascript는 동적인 인터렉션을 담당하는 언어였죠?
+        사실 javascript는 현재 여러분이 상상하는 것 이상으로 활용되고 있습니다.
+        오늘 배워 볼 javascript는 이러한 javascript의 아~~주 기초라고 생각하면 된다.
+        진화하기 전 태초의 javascript의 사용법을 배워보는 것이다.
+        그러니 오늘은 이걸 다 외우겠다! javascript를 마스터하겠다! 를 목표로 두지 말고,
+        아~ 이럴 때 이렇게 javascript를 사용할 수 있구나! 를 직접 경험하고 이해하는 과정으로 생각하면 된다.​
+        따라서 javascript의 문법적인 설명은 깊게 하지 않을 예정이다.
+
+    📌 Javascript 추가하기
+        html 파일을 만들고, body 태그가 끝나기 전 <script></script> 태그를 추가한다.
+        script 태그 안에 javascript 코드를 적을 수 있다.
+
+        ⭐심화⭐ 왜 <script> 태그는 <head> 안에 적지 않고 <body> 끝에 적어야 하나요?
+            브라우저는 html 태그를 열심히 읽다가 script 태그를 만나면 잠시 중단하고,
+            script 태그 내부에 작성된 javascript 코드를 읽는다.
+            즉, 브라우저가 읽히다가 뚝! 끊길 수 있다는 거죠.
+            간단한 javscript 코드일 경우 이러한 딜레이 현상이 사람 눈에 보이지 않을 수 있지만,
+            양이 많아지고 복잡해질수록 눈에 보일 수 있다.
+            따라서 script 태그는 body 태그 최하단에 작성해야 한다.
+
+    📌 Javascript 로 css 변경하기 
+        본격적으로 자바스크립트를 사용해 CSS 값을 변경해 본다.
+        div 하나와 button 하나를 만들고, div는 보여지지 않도록 display:none; 설정해 두었다.
+
+        실행되는 순서대로 코드를 설명해 본다.
+            1. 버튼 클릭 시 clickButton 이라는 javascript 함수 실행
+            2. document.getElementById("text")로 text라는 id를 가진 태그 요소 찾기 (➡ 바로 <div id="text" ....> 이거다.)
+            3. ~.style.display = "block" 해당 태그 요소의 display 속성을 "block"으로 변경
+        ​
+        즉, 위와 같이 기본적으로 display : none 설정이 되어있던 div 태그가 있을 때,
+        버튼을 눌러서 css 속성값을 변경해 텍스트가 보여지도록 코드를 구성한 것이다.
+
+        이런 식으로 id를 이용해 원하는 태그를 찾고,
+        해당 html 태그 요소의 속성을 원하는 대로 바꿀 수 있다.
+        어째서 Javascript가 동적인 인터렉션을 담당한다고 했는지, 이해할 수 있을 것이다.
+-->
