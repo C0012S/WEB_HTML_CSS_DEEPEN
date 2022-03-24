@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>Quiz 13. 미니홈피 프로젝트 완성하기</title>
+        <link rel="stylesheet" href="./css/quiz_13_font.css" />
+        <link rel="stylesheet" href="./css/quiz_13_layout.css" />
+        <link rel="stylesheet" href="./css/quiz_13_visitor.css" />
+        <script src="" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="bookcover">
+            <div class="bookdot">
+                <div class="page">
+                    <div class="container">
+                        <div class="visit_column">
+                            <div class="row1-1">
+                                TODAY <span class="visit_num">28</span> | TOTAL 234918
+                            </div>
+                            <div class="row1-2 box">
+                                <img class="profile" src="./img/FennecFox.jpg">
+                                <div class="introduction">
+                                    나는야 쿠키를 좋아하는 <br>
+                                    사막여우
+                                </div>
+                                <div class="name">C00K12S</div>
+                                <select name="surfing" class="surfing" onchange="window.open(value, '_blank');">
+                                    <option value="/" selected disabled hidden>파도타기</option>
+                                    <option value="https://cafe.naver.com/codeuniv">
+                                        코뮤니티로 가기
+                                    </option>
+                                    <option value="https://www.instagram.com/">
+                                        인스타그램으로 가기
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="content_column">
+                            <div class="row2-1">
+                                <div class="title_item">추억 상자</div>
+                                <div class="url_item">https://url주소/나중에입력</div>
+                            </div>
+
+                            <div class="row2-2 box">
+                                <div class="visitor_box">
+                                    <div class="visitor_post">
+                                        <div class="visitor_header">No. 3 <span class="visitor_name">참새</span> <i class="fas fa-house-user"></i> (2022.03.24 10:02)</div>
+                                        <div class="visitor_content">
+                                            <div class="visitor_image background-1">
+                                                <img src="./img/Sparrow.png" alt="참새 프로필 사진">
+                                            </div>
+                                            <div class="visitor_text">
+                                                갑자기 미안한데 나도 참다 참다 말하는 건데 <br>
+                                                저번에도 그러더니 진짜 실망이야 조금 너 이런 식으로 계속 <br>
+                                                그러면 나는 너에 대한 감정 쌓이고 쌓이고 쌓이고 쌓이면 <br><br>
+                                                싸이먼 도미닉
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="visitor_post">
+                                        <div class="visitor_header">No. 2 <span class="visitor_name">개미</span> <i class="fas fa-house-user"></i> (2022.03.23 02:19)</div>
+                                        <div class="visitor_content">
+                                            <div class="visitor_image background-2">
+                                                <img src="./img/Ant.png" alt="개미 프로필 사진">
+                                            </div>
+                                            <div class="visitor_text">
+                                                애인이 저녁 즈음에 한강이 너무 예쁘다길래 <br>
+                                                오 그쵸 예쁘죠 했더니 <br>
+                                                "역시 고구려 백제 신라가 서로 손에 넣으려고 싸울 만했다" 는 <br>
+                                                표현을 해서 잠시 어떤 대답을 해야 할지 <br>
+                                                당황하고 말았음...
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="visitor_post">
+                                        <div class="visitor_header">No. 1 <span class="visitor_name">곰</span> <i class="fas fa-house-user"></i> (2022.03.22 09:01)</div>
+                                        <div class="visitor_content">
+                                            <div class="visitor_image background-3">
+                                                <img src="./img/Bear.png" alt="곰 프로필 사진">
+                                            </div>
+                                            <div class="visitor_text">
+                                                우리집 강아지랑 산책을 하고 있는데 한 꼬마 아이가 와서는 <br>
+                                                "와~! 너 귀엽다! 몇 살이야?" 라길래 내가 대신 <br>
+                                                "12 살이야" 라고 했더니 갑자기 아이 얼굴이 어두워지면서 <br>
+                                                "형 미안해요" 라고 했다.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu_column">
+                            <div class="home"><a href="./quiz_13_home.html">홈</a></div>
+                            <div class="diary"><a href="./quiz_13_diary.html">다이어리</a></div>
+                            <div class="album"><a href="./quiz_13_album.html">사진첩</a></div>
+                            <div class="visitor"><a href="./quiz_13_visitor.html">방명록</a></div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </body>
+</html>
+
+<!--
+    오늘의 꿀팁 😎
+        이미지를 넣는 또 다른 방법
+            이미지를 img 태그가 아닌 background-image라는 css 속성을 이용해 넣을 수도 있다.
+            이럴 경우 배율에 맞게 background-size 속성도 적용할 수 있다.
+                background-image: url("./images/background1.jpg");
+            위의 코드처럼 background-image 속성에 url("상대경로") 값을 적을 수 있다.
+            이때 유의할 점은 css 파일 기준으로 상대경로를 적어야 한다는 점이다.
+            
+                background-image: url("./images/background1.jpg");
+                background-size: cover;
+            이렇게 background-size 속성도 추가해 본다.
+            background-size는 숫자로 지정할 수도 있지만, contain과 cover라는 특별한 값도 지정할 수 있다.
+            contain 값은 이미지 전체가 보이도록 가로-세로 비율은 유지한 채 작아지고,
+            cover 값은 박스 전체에 채워지도록 가로-세로 비율을 유지한 채 이미지가 커진다.
+
+    ✅ 오늘의 문제 : 방명록 만들기
+        ✔ 조건
+            - 방명록의 이미지는 배경 이미지, 프로필 이미지(곰, 개미, 참새 사진)이 겹쳐지도록 만든다.
+            - 배경 이미지는 background-image와 background-size 속성을 적용해 비율에 맞게 꽉 차도록 만든다.
+            - 프로필 이미지는 img 태그를 이용해 적당한 사이즈로 중앙에 배치되도록 만든다.
+
+        ⭐ 힌트보기 ⭐
+            이미지 겹치도록 만들기 / 이미지 사이즈 조정 방법
+                - 이미지 부분은 가로-세로 사이즈가 고정되어 있어야 한다.
+                - img 태그가 중앙에 배치되려면 img 태그를 감싸고 있는 박스의 css 속성을 바꿔 줘야 할 것이다.
+                - img 태그가 너무 클 경우 width 혹은 height 속성을 80% 정도로 만들어 주면 된다.
+
+        코드 보기
+            👇 방명록 이미지 부분 코드
+                <div class="guestbook-image background-1">
+	                <img src="./static/images/sparrow.png" alt="참새 프로필 사진" />
+                </div>
+
+                .guestbook-image {
+                    flex: 0 0 8rem;
+                    height: 8rem;
+                    background-size: cover;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .background-1 {
+                    background-image: url("./images/background1.jpg");
+                }
+
+                .guestbook-image > img {
+                    width: 80%;
+                }
+-->
